@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(90deg, #3d1f52, #7940a8);
+    overflow: hidden;
+}
+header{
+    position: relative;
+    width:100%;
+    padding:40px 0;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    z-index:2;
+}
+.logo a{
+    text-decoration:none;
+    font-size:20px;
+    text-transform: capitalize;
+    color:#fff;
+}
+.menu ul{
+    position: relative;
+    display:flex;
+}
+.menu ul li{
+    list-style:none;
+    transform:scale(1);
+    transition:0.3s;
+}
+.menu ul li:hover{
+    transform:scale(0.8);
+}
+.menu ul li a{
+    text-decoration:none;
+    font-size:16px;
+    color:#fff;
+    text-transform: uppercase;
+    margin:0 18px;
+    cursor: pointer;
+}
+.socialIcon i{
+    position: relative;
+    font-size:16px;
+    color:#fff;
+    margin:0 12px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.socialIcon i:hover{
+    transform:translateY(-5px);
+}
+.cart p{
+    font-size:16px;
+    color:#fff;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+.cart p span{
+    position: relative;
+    left:8px;
+}
+.swiper{
+    position: absolute;
+    width:100%;
+    height:100vh;
+    top:0vh;
+    left:0vh;
+}
+.swiper-slide{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(90deg, #353b7c, #4b8dbf);
+}
+.slide02{
+    background-image:linear-gradient(90deg, #432752, #9952bc);
+}
+.slide03{
+    background-image:linear-gradient(90deg, #30112a, #601f4d);
+}
+.slide04{
+    background-image:linear-gradient(90deg, #412258, #8f4cc7);
+}
+.slideContent{
+    position: relative;
+}
+.imgCon{
+    position: absolute;
+    top:18vh;
+    left:35%;
+    transform:translate(-50%,-50%);
+}
+.imgCon img{
+    width:70%;
+    animation:animated 5s linear infinite;
+}
+@keyframes animated{
+    0%{
+        transform:translateY(12px);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+    100%{
+        transform:translateY(12px);
+    }
+}
+.shadow{
+    position: absolute;
+    top:75vh;
+    left:70vh;
+}
+.shadow img{
+    width:70%;
+    opacity:0.5;
+}
+.slideContent .titleName{
+    position: absolute;
+    top:35vh;
+    left:30%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    font-size:7rem;
+    color:#fff;
+    font-weight:900;
+    text-transform: uppercase;
+    letter-spacing:12px;
+}
+.slideContent .titleName span{
+    -webkit-text-stroke: 2px rgb(255,255,255);
+    color:transparent;
+}
+.productInfo{
+    position: absolute;
+    left:65vh;
+    top:75vh;
+}
+.productDetils{
+    position: relative;
+    width:450px;
+    height:180px;
+    overflow:hidden;
+}
+.productDetils .info h2{
+    color:#fff;
+    padding:8px 0;
+    font-size: 2rem;
+}
+.productDetils .info .rating i{
+    font-size:12px;
+    color:#fff;
+    padding:8px 0;
+}
+.productDetils .info p{
+    color:rgb(207,207,207);
+    line-height:1.8;
+}
+.buybox{
+    position: relative;
+    left:70vh;
+    top:-14vh;
+    width:160px;
+    height:60px;
+    text-align:center;
+    overflow: hidden;
+}
+.buybox a{
+    text-decoration:none;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    position: relative;
+    cursor: pointer;
+}
+.buybox a::before{
+    position: absolute;
+    content:"";
+    bottom:-12px;
+    left:-15px;
+    width:150%;
+    height:1px;
+    background-color:#fff;
+    transition:0.3s;
+}
+.buybox a:hover::before{
+    bottom:10px;
+}
+.arrow{
+    position: absolute;
+    top:35vh;
+    width:250px;
+    height:250px;
+    border:1px solid rgba(255,255,255,0.192);
+    border-radius:50%;
+    color:#fff;
+    transform:scale(1);
+    cursor: pointer;
+    transition:0.3s;
+}
+.arrow:hover{
+    transform:scale(1.3);
+}
+.swiper-button-next{
+    position: absolute;
+    right:-12vh;
+}
+.swiper-button-prev{
+    position: absolute;
+    left:-12vh;
+}
